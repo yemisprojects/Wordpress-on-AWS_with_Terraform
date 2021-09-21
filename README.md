@@ -6,13 +6,13 @@ This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an
 #### AWS Architecture
 ![picture alt](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform/blob/main/images/Architecture%20used%20for%20this%20project.PNG)
 
-## Services used
+## AWS Services used
 AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Compute Cloud (Amazon EC2), Auto Scaling, Elastic Load Balancing (Application Load Balancer),Amazon Relational Database Service (Amazon RDS), Amazon Elastic File System (Amazon EFS), Amazon Route53 and Amazon Certificate Manager (Amazon ACM).
 
 ## Billing Estimates
 AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill. The cost will vary depending on your usage, the instance types selected for the web server and database instances etc. The total cost may also increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site. To see a detailed breakdown of costs and adjust your billing estimate, explore the [AWS Pricing Calculator](https://calculator.aws/#/)
 
-## Pre-requistes before Using configuration files
+## Prerequistes before using configuration files
 * Create [An AWS Account to provision resources to host wordpress](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) 
 * Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 * Configure AWS CLI using [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) to setup a default profile  
@@ -25,7 +25,7 @@ AWS pricing is based on your usage of each individual service. The total combine
 1. Clone this repo
 2. Change to the Wordpress-on-AWS_with_Terraform directory
 3. ___You are required to update the value of the route53_public_zone_name___ variable to your domain name in the input-parameters.auto.tfvars file [as mentioned in the pre-requisites section](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform#pre-requistes-before-using-configuration-files)
-4. Initialize your working directory containing Terraform configuration files and deploy infrasture
+4. Initialize your working directory containing Terraform configuration files and deploy infrastructure
 5. Destroy infrastructure 
 ```
 git clone https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform.git
