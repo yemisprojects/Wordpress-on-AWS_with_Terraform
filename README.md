@@ -59,14 +59,16 @@ Destroy infrasture
 - Amazon Certifcate Manager for certificates used with Amazon ELB
 - EC2 instances to host wordpress site and key pair to access them through a Bastion host 
 
-## Input Parameters which can control cost (you can update them within the input paramters tf.vars)
-
-
+## Required Input Parameter
+ - update the value of the parameter below in input-parameters.auto.tfvars> Provide your domain name
+       ```
+       route53_public_zone_name
+       ```
 
 ## Outputs
-- website url
+- URL to connect to website
 - bastion_host_public_ip
-- ssh keypair dumped to current working directory
+- ssh keypair file auto-generated and dumped to current working directory
 
 ## Provider and terraform versions
 | Name  |Version |
