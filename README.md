@@ -1,6 +1,6 @@
 <h1 align="center">Wordpress deployed using Terraform on AWS</h1>
 
-## Overview
+### Overview
 This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an open-source blogging tool and content management system (CMS) based on PHP and MySQL. The architecture adopted can be used for production workloads while requiring minimal management responsibilities. This repository consists of a set of terraform configuration files which automatically handles the provisioning and management of the underlying infratucture. The architecture is secure, highly available with each tier being able to scale independently.
 
 #### AWS Architecture
