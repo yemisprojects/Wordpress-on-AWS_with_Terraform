@@ -8,7 +8,7 @@ This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an
 
 ## Services used and Cost
 
-AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill.
+AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill._
 _AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Compute Cloud (Amazon EC2), Auto Scaling, Elastic Load Balancing (Application Load Balancer),Amazon Relational Database Service (Amazon RDS), Amazon Elastic File System (Amazon EFS), Amazon Route53 and Amazon Certificate Manager (Amazon ACM)_
 
 ## Total Billing Estimates
