@@ -68,11 +68,13 @@ Destroy infrasture
 - bastion_host_public_ip
 - ssh keypair dumped to current working directory
 
+## Provider and terraform versions
 | Name  |Version |
 | ------------- | ------------- |
 | terrafrom  | ~> 1.0  |
 | aws  | ~> 3.58  |
 
 
-##### Project version 2.0 (under works)
+#### Project version 2.0 (under works)
+---------------------------------------
 To include cloudfront distribution to serve static and dynamic content from S3 and EC2
