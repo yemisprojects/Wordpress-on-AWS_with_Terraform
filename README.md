@@ -1,5 +1,4 @@
 #                 Wordpress deployed using Terraform on AWS<a name="TOP"></a>
-------------------------------------------------------------------------------------
 version 1.0
 
 ## Overview
@@ -43,30 +42,29 @@ Destroy infrasture
     terraform destroy -auto-approve
 ```
 
-List of AWS Resources Created:
----------------------------------
-Amazon Virtual Private Cloud (Amazon VPC)
-Internet Gateway (IGW)
-NAT Gateway (on each public subnet)
-Amazon VPC subnets (public, private (data, web)) in all the Availability Zones (AZs) selected
-Routing tables for public subnets - routing through IGW
-Routing tables for private subnets - routing through NAT Gateway
-Mulitple VPC Security Groups
-Bastion host in a public subent - in public subnets (public)
-Amazon Relational Database Service (Amazon RDS) with MuSQl engine - in private subnets (data)
-Amazon Elastic File System (Amazon EFS) file system - with mount targets in private subnets (data) 
-Amazon Elastic Load Balancing (Amazon ELB) Application Load Balancer (ALB) - in public subnets (public)
-Web Auto Scaling Group (launching 1 instances) - in private subnets (web)
-Amazon Route53 DNS record set
-Amazon Certifcate Manager for certificates used with Amazon ELB
-EC2 instances to host wordpress site and key pair to access them through a Bastion host 
+## List of AWS Resources Created:
 
-Input Parameters which can control cost (you can update them within the input paramters tf.vars)
--------------------------------------------------------------------------------------------------
+- Amazon Virtual Private Cloud (Amazon VPC)
+- Internet Gateway (IGW)
+- NAT Gateway (on each public subnet)
+- Amazon VPC subnets (public, private (data, web)) in all the Availability Zones (AZs) selected
+- Routing tables for public subnets - routing through IGW
+- Routing tables for private subnets - routing through NAT Gateway
+- Mulitple VPC Security Groups
+- Bastion host in a public subent - in public subnets (public)
+- Amazon Relational Database Service (Amazon RDS) with MuSQl engine - in private subnets (data)
+- Amazon Elastic File System (Amazon EFS) file system - with mount targets in private subnets (data) 
+- Amazon Elastic Load Balancing (Amazon ELB) Application Load Balancer (ALB) - in public subnets (public)
+- Web Auto Scaling Group (launching 1 instances) - in private subnets (web)
+- Amazon Route53 DNS record set
+- Amazon Certifcate Manager for certificates used with Amazon ELB
+- EC2 instances to host wordpress site and key pair to access them through a Bastion host 
+
+## Input Parameters which can control cost (you can update them within the input paramters tf.vars)
 
 
-Output
----------
+
+## Output
 website url
 bastion_host_public_ip
 sh keypair filename to access servers
@@ -77,6 +75,5 @@ sh keypair filename to access servers
 | aws  | ~> 3.58  |
 
 
-Project version 2.0 (under works)
-------------------------------------------
+##### Project version 2.0 (under works)
 To include cloudfront distribution to serve static and dynamic content from S3 and EC2
