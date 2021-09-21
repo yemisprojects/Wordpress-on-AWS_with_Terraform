@@ -23,8 +23,8 @@ AWS pricing is based on your usage of each individual service. The total combine
 
 ## Steps to Run to deploy the infrastructure and website
 1. Clone this repo
-2. change to the Wordpress-on-AWS_with_Terraform directory
-3. You are required to update the value of this variable route53_public_zone_name to your domain name in the input-parameters.auto.tfvars file [as mentioned in the pre-requisites section](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform#pre-requistes-before-using-configuration-files)
+2. Change to the Wordpress-on-AWS_with_Terraform directory
+3. You are required to update the value of this variable _route53_public_zone_name_ to your domain name in the input-parameters.auto.tfvars file [as mentioned in the pre-requisites section](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform#pre-requistes-before-using-configuration-files)
 4. Initialize your working directory containing Terraform configuration files and deploy infrasture
 5. Destroy infrastructure 
 ```
