@@ -8,8 +8,7 @@ This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an
 
 ## Services used
 AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill.
-_\AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Compute Cloud (Amazon EC2), Auto Scaling, Elastic Load Balancing (Application Load Balancer),Amazon Relational Database Service (Amazon RDS), Amazon Elastic File System (Amazon EFS), Amazon Route53 and Amazon Certificate Manager (Amazon ACM)_
-<br />
+AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Compute Cloud (Amazon EC2), Auto Scaling, Elastic Load Balancing (Application Load Balancer),Amazon Relational Database Service (Amazon RDS), Amazon Elastic File System (Amazon EFS), Amazon Route53 and Amazon Certificate Manager (Amazon ACM).
 
 ## Costs/Total Billing Estimates
 The total cost of building a WordPress website will vary depending on your usage and the instance types you select for the web server and database instance. Using the default configuration in this repo, it could cost $..../month to host the WordPress site based on the cost optimization feature of Terraform cloud. This cost reflects the minimum resources recommended for a production WordPress workload, with only one active web server and a separate Amazon RDS MySQL database instance. The total cost may increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site (approximately $../month for each additional web server assuming that the web server is active for the entire month)
