@@ -60,9 +60,9 @@ terraform destroy -auto-approve
 - EC2 instances to host wordpress site and key pair to access them through a Bastion host 
 
 ## Required Input Parameter
- - update the value of the parameter below in input-parameters.auto.tfvars> Provide your domain name
+ - Update the value of the parameter below in the input-parameters.auto.tfvars file. Provide your domain name as show below
        ```
-       route53_public_zone_name
+       route53_public_zone_name = example.com
        ```
 
 ## Outputs
