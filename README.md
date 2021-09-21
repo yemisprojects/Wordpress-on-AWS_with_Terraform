@@ -1,8 +1,4 @@
-# Wordpress deployed using Terraform on AWS
-
-<center># Wordpress deployed using Terraform on AWS</centre>
-
-# Wordpress deployed using Terraform on AWS {style=text-align:center}
+#                 Wordpress deployed using Terraform on AWS
 
 version 1.0
 
