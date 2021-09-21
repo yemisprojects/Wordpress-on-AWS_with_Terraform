@@ -23,7 +23,7 @@ To see a detailed breakdown of costs and adjust your billing estimate, explore t
 
 Pre-requistes before Using configuration files
 ------------------------------------------------
-An AWS Account to provision resources to host wordpress : sign up link https://portal.aws.amazon.com/gp/aws/developer/registration/index.html
+[An AWS Account to provision resources to host wordpress]( https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) 
 Install AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 Configure AWS CLI using AWS configure to setup a default profile  https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 Install Terraform version ..(number)... : https://www.terraform.io/downloads.html
