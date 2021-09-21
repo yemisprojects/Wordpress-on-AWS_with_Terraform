@@ -7,12 +7,10 @@ This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an
 ![picture alt](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform/blob/main/images/Architecture%20used%20for%20this%20project.PNG)
 
 ## Services used
-AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill.
 AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Compute Cloud (Amazon EC2), Auto Scaling, Elastic Load Balancing (Application Load Balancer),Amazon Relational Database Service (Amazon RDS), Amazon Elastic File System (Amazon EFS), Amazon Route53 and Amazon Certificate Manager (Amazon ACM).
 
-## Total Billing Estimates
-The total cost of building a WordPress website will vary depending on your usage and the instance types you select for the web server and database instance. The total cost may increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site.
-To see a detailed breakdown of costs and adjust your billing estimate, explore the [AWS Pricing Calculator](https://calculator.aws/#/)
+## Billing Estimates
+AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill. The total cost of building a WordPress website will vary depending on your usage and the instance types you select for the web server and database instance. The total cost may increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site.To see a detailed breakdown of costs and adjust your billing estimate, explore the [AWS Pricing Calculator](https://calculator.aws/#/)
 
 ## Pre-requistes before Using configuration files
 * Create [An AWS Account to provision resources to host wordpress](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) 
