@@ -61,9 +61,9 @@ terraform destroy -auto-approve
 
 ## Required Input Parameter
  - Update the value of the parameter below in the input-parameters.auto.tfvars file. Provide your domain name as show below
-       ```
+```
        route53_public_zone_name = example.com
-       ```
+```
 
 ## Outputs
 - URL to connect to website
