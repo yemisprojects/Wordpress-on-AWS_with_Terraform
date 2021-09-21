@@ -26,19 +26,19 @@ To see a detailed breakdown of costs and adjust your billing estimate, explore t
     * If your domain is registered with an external DNS service, [migrate the domain registeration and or service to Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-inactive.html)
 
 ## Steps to Run to deploy the infrastructure and website
+1. Clone this repo
+2. change to the Wordpress-on-AWS_with_Terraform directory
+3. You are required to update the value of this variable route53_public_zone_name to your domain name in the input-parameters.auto.tfvars file as mentioned in the pre-requisites section
+4. Initialize your working directory containing Terraform configuration files and deploy infrasture
+5. Destroy infrastructure 
 ```
-Clone this repo
-git clone
-change to Wordpress-on-AWS_with_Terraform
+git clone https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform.git
 cd Wordpress-on-AWS_with_Terraform
-Required
-Update the route53_public_zone_name variable value to your domain name in the input-parameters.auto.tfvars to your domain name used in Route53 as mentioned in the pre-requisites section
-Initialize configuration and deploy infrasture and website
-    terraform init
-    terraform plan
-    terraform apply -auto-approve
-Destroy infrasture
-    terraform destroy -auto-approve
+route53_public_zone_name = YOUR_DOMAIN_NAME_HERE
+terraform init
+terraform plan
+terraform apply -auto-approve
+terraform destroy -auto-approve
 ```
 
 ## List of AWS Resources Created:
