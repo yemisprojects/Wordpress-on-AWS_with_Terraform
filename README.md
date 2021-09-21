@@ -21,8 +21,8 @@ The total cost of building a WordPress website will vary depending on your usage
 
 To see a detailed breakdown of costs and adjust your billing estimate, explore the AWS Pricing Calculator https://calculator.aws/#/
 
-Pre-requistes before starting
-------------------------------
+Pre-requistes before Using configuration files
+------------------------------------------------
 An AWS Account to provision resources to host wordpress : sign up link https://portal.aws.amazon.com/gp/aws/developer/registration/index.html
 Install AWS CLI https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 Configure AWS CLI using AWS configure to setup a default profile  https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
@@ -74,6 +74,11 @@ Output
 website url
 bastion_host_public_ip
 sh keypair filename to access servers
+
+| Name  |Version |
+| ------------- | ------------- |
+| terrafrom  | ~> 1.0  |
+| aws  | ~> 3.58  |
 
 Name+++++++++++Version
 terrafrom	~> 1.0
