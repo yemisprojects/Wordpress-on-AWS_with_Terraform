@@ -38,7 +38,6 @@ terraform destroy -auto-approve
 ```
 
 ## List of AWS Resources Created:
-
 - Amazon Virtual Private Cloud (Amazon VPC)
 - Internet Gateway (IGW)
 - NAT Gateway (on each public subnet)
