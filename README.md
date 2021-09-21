@@ -1,8 +1,12 @@
 # Wordpress deployed using Terraform on AWS
 
+<p align="center">
+# Wordpress deployed using Terraform on AWS
+</p>
+
 version 1.0
 
-Overview
+### Overview
 ------------
 This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an open-source blogging tool and content management system (CMS) based on PHP and MySQL. The architecture adopted can be used for production workloads while requiring minimal management responsibilities. This repository consists of a set of terraform configuration files which automatically handles the provisioning and management of the underlying infratucture. The architecture is secure, highly available with each tier being able to scale independently.
 
@@ -79,10 +83,6 @@ sh keypair filename to access servers
 | ------------- | ------------- |
 | terrafrom  | ~> 1.0  |
 | aws  | ~> 3.58  |
-
-Name+++++++++++Version
-terrafrom	~> 1.0
-aws	~> 3.58
 
 
 Project version 2.0 (under works)
