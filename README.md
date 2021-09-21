@@ -1,4 +1,4 @@
-<h1 align="center">Wordpress deployed using Terraform on AWS</h1>
+<h1 align="center">Wordpress hosted on AWS with Terraform</h1>
 
 <h3 align="center">Overview</h3>
 This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an open-source blogging tool and content management system (CMS) based on PHP and MySQL. The architecture adopted can be used for production workloads while requiring minimal management responsibilities. This repository consists of a set of terraform configuration files which automatically handles the provisioning and management of the underlying infratucture. The architecture is secure, highly available with each tier being able to scale independently.
@@ -10,7 +10,7 @@ This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an
 AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill.
 AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazon Elastic Compute Cloud (Amazon EC2), Auto Scaling, Elastic Load Balancing (Application Load Balancer),Amazon Relational Database Service (Amazon RDS), Amazon Elastic File System (Amazon EFS), Amazon Route53 and Amazon Certificate Manager (Amazon ACM).
 
-## Costs/Total Billing Estimates
+## Total Billing Estimates
 The total cost of building a WordPress website will vary depending on your usage and the instance types you select for the web server and database instance. Using the default configuration in this repo, it could cost $..../month to host the WordPress site based on the cost optimization feature of Terraform cloud. This cost reflects the minimum resources recommended for a production WordPress workload, with only one active web server and a separate Amazon RDS MySQL database instance. The total cost may increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site (approximately $../month for each additional web server assuming that the web server is active for the entire month)
 
 To see a detailed breakdown of costs and adjust your billing estimate, explore the [AWS Pricing Calculator](https://calculator.aws/#/)
