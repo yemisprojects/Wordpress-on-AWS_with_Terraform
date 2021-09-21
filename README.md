@@ -18,13 +18,13 @@ AWS pricing is based on your usage of each individual service. The total combine
 * Configure AWS CLI using [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) to setup a default profile  
 * Install [Terraform](https://www.terraform.io/downloads.html)
 * Use Route53 as the DNS service for your domain and create a public hosted zone for the domain in Route53
-    * If you dont have a domain, you can [Register one using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure)     afterwhich a hosted zone is created by default by Route53
+    * If you don't have a domain, you can [Register one using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure)     afterwhich a default hosted zone is created by Route53
     * If your domain is registered with an external DNS service, [migrate the domain registeration and or service to Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-inactive.html)
 
 ## Steps to Run to deploy the infrastructure and website
 1. Clone this repo
 2. Change to the Wordpress-on-AWS_with_Terraform directory
-3. You are required to update the value of this variable _route53_public_zone_name_ to your domain name in the input-parameters.auto.tfvars file [as mentioned in the pre-requisites section](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform#pre-requistes-before-using-configuration-files)
+3. ***You are required to update the value of the _route53_public_zone_name_ *** variable to your domain name in the input-parameters.auto.tfvars file [as mentioned in the pre-requisites section](https://github.com/yemisprojects/Wordpress-on-AWS_with_Terraform#pre-requistes-before-using-configuration-files)
 4. Initialize your working directory containing Terraform configuration files and deploy infrasture
 5. Destroy infrastructure 
 ```
@@ -45,7 +45,7 @@ terraform destroy -auto-approve
 - Routing tables for public subnets - routing through IGW
 - Routing tables for private subnets - routing through NAT Gateway
 - Mulitple VPC Security Groups
-- Bastion host in a public subent - in public subnets (public)
+- Bastion host in a public subent 
 - Amazon Relational Database Service (Amazon RDS) with MuSQl engine - in private subnets (data)
 - Amazon Elastic File System (Amazon EFS) file system - with mount targets in private subnets (data) 
 - Amazon Elastic Load Balancing (Amazon ELB) Application Load Balancer (ALB) - in public subnets (public)
