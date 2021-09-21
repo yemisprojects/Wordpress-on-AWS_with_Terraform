@@ -1,5 +1,4 @@
 #                 Wordpress deployed using Terraform on AWS<a name="TOP"></a>
-version 1.0
 
 ## Overview
 This project deploys and hosts Wordpress on AWS using Terraform. WordPress is an open-source blogging tool and content management system (CMS) based on PHP and MySQL. The architecture adopted can be used for production workloads while requiring minimal management responsibilities. This repository consists of a set of terraform configuration files which automatically handles the provisioning and management of the underlying infratucture. The architecture is secure, highly available with each tier being able to scale independently.
@@ -64,10 +63,10 @@ Destroy infrasture
 
 
 
-## Output
-website url
-bastion_host_public_ip
-sh keypair filename to access servers
+## Outputs
+- website url
+- bastion_host_public_ip
+- ssh keypair dumped to current working directory
 
 | Name  |Version |
 | ------------- | ------------- |
