@@ -14,7 +14,7 @@ AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazo
 ## Total Billing Estimates
 The total cost of building a WordPress website will vary depending on your usage and the instance types you select for the web server and database instance. Using the default configuration in this repo, it could cost $..../month to host the WordPress site based on the cost optimization feature of Terraform cloud. This cost reflects the minimum resources recommended for a production WordPress workload, with only one active web server and a separate Amazon RDS MySQL database instance. The total cost may increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site (approximately $../month for each additional web server assuming that the web server is active for the entire month)
 
-To see a detailed breakdown of costs and adjust your billing estimate, explore the AWS Pricing Calculator https://calculator.aws/#/
+To see a detailed breakdown of costs and adjust your billing estimate, explore the [AWS Pricing Calculator](https://calculator.aws/#/)
 
 ## Pre-requistes before Using configuration files
 * Create [An AWS Account to provision resources to host wordpress](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) 
