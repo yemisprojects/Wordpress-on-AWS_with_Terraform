@@ -18,7 +18,7 @@ AWS pricing is based on your usage of each individual service. The total combine
 * Configure AWS CLI using [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) to setup a default profile  
 * Install [Terraform](https://www.terraform.io/downloads.html)
 * Use Route53 as the DNS service for your domain and create a public hosted zone for the domain in Route53
-    * If you don't have a domain, you can [Register one using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure)     afterwhich a default hosted zone is created by Route53
+    * If you don't have a domain, you can [Register one using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure)     after which a default hosted zone is created by Route53
     * If your domain is registered with an external DNS service, [migrate the domain registeration and or service to Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-inactive.html)
 
 ## Steps to Run to deploy the infrastructure and website
