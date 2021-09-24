@@ -13,12 +13,12 @@ AWS Services deployed includes: Amazon Virtual Private Cloud (Amazon VPC), Amazo
 AWS pricing is based on your usage of each individual service. The total combined usage of each service will create your monthly bill. The cost will vary depending on your usage, the instance types selected for the web server and database instances etc. The total cost may also increase if you use Auto Scaling to increase the number of web server instances in the event of increased traffic to your WordPress site. To see a detailed breakdown of costs and adjust your billing estimate, explore the [AWS Pricing Calculator](https://calculator.aws/#/)
 
 ## Prerequistes before using configuration files
-* Create [An AWS Account to provision resources to host wordpress](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) 
+* Create [an AWS Account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) with administrator-level access
 * Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-* Configure AWS CLI using [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) to setup a default profile  
+* Configure AWS CLI using [aws configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) and setup a default profile  
 * Install [Terraform](https://www.terraform.io/downloads.html)
-* Use Route53 as the DNS service for your domain and create a public hosted zone for the domain in Route53
-    * If you don't have a domain, you can [Register one using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure)     after which a default hosted zone is created by Route53
+* Create a public hosted zone for your domain in Route53
+    * If you don't have a domain, you can [register one using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure)     after which a default hosted zone is created by Route53
     * If your domain is registered with an external DNS service, [migrate the domain registeration and or service to Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-inactive.html)
 
 ## Steps to Run to deploy the infrastructure and website
